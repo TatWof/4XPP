@@ -7,6 +7,8 @@
 #define X_DisplaySize 8
 #define Y_DisplaySize 8
 
+#define useExtendedASCII false
+
 unsigned int X_MapSize;
 unsigned int Y_MapSize;
 

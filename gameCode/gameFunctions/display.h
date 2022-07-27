@@ -53,13 +53,15 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
         
         for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
         {
-            std::cout << "║";
+            if (useExtendedASCII == true) std::cout << "║";
+            else std::cout << "|";
             displayTerrainKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
             displayResourceKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
             displayUnitKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
 
         }
-        std::cout << "║" << std::endl;
+        if (useExtendedASCII == true) std::cout << "║" << std::endl;
+        else std::cout << "|" << std::endl;
 
         std::cout << "~";
         std::cout << std::setw(5) << std::left;
@@ -67,12 +69,14 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
 
         for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
         {
-            std::cout << "║";
+            if (useExtendedASCII == true) std::cout << "║";
+            else std::cout << "|";
             displayBuildingKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
             std::cout << "  ";
             displayTerritoryKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
         }
-        std::cout << "║" << std::endl;
+        if (useExtendedASCII == true) std::cout << "║" << std::endl;
+        else std::cout << "|" << std::endl;
 
         displayLineSplitter();
     }
@@ -84,9 +88,12 @@ void displayLineSplitter()
     std::cout << "      ";
     for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
     {
-        std::cout << "╬══════";
+        if (useExtendedASCII == true) std::cout << "╬══════";
+        else std::cout << "=======";
     }
-    std::cout << "╬" << std::endl;
+    if (useExtendedASCII == true) std::cout << "╬" << std::endl;
+    else std::cout << "=" << std::endl;
+    
 }
 
 void displayTerrainKey(int X, int Y)
