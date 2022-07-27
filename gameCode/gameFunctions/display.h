@@ -1,11 +1,11 @@
 #include <iostream>
 #include <iomanip>
 
-#include "../settings.h"
-#include "map.h"
-#include "building.cpp"
-#include "unit.cpp"
-#include "faction.cpp"
+#include "./settings.h"
+#include "./baseStructs/map.h"
+#include "./references/buildings.h"
+#include "./references/units.h"
+#include "./references/factions.h"
 
 #ifndef DISPLAY_H
 #define DISPLAY_H

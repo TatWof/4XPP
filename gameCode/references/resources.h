@@ -1,7 +1,7 @@
-#include "resource.h"
+#include "./baseStructs/resource.h"
 
-#ifndef RESOURCE_CPP
-#define RESOURCE_CPP
+#ifndef RESOURCES_H
+#define RESOURCES_H
 
 Resource resources[]
 {

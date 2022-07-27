@@ -1,7 +1,7 @@
-#include "faction.h"
+#include "./baseStructs/faction.h"
 
-#ifndef FACTION_CPP
-#define FACTION_CPP
+#ifndef FACTIONS_H
+#define FACTIONS_H
 
 Faction factions[]
 {

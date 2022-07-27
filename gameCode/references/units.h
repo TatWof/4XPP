@@ -1,7 +1,7 @@
-#include "unit.h"
+#include "./baseStructs/unit.h"
 
-#ifndef UNIT_CPP
-#define UNIT_CPP
+#ifndef UNITS_H
+#define UNITS_H
 
 Unit units[]
 {

@@ -1,7 +1,7 @@
-#include "building.h"
+#include "./baseStructs/building.h"
 
-#ifndef BUILDING_CPP
-#define BUILDING_CPP
+#ifndef BUILDINGS_H
+#define BUILDINGS_H
 
 Building buildings[]
 {

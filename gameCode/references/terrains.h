@@ -1,7 +1,7 @@
-#include "terrain.h"
+#include "./baseStructs/terrain.h"
 
-#ifndef TERRAIN_CPP
-#define TERRAIN_CPP
+#ifndef TERRAINS_H
+#define TERRAINS_H
 
 Terrain terrains[]
 {
