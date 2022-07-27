@@ -4,6 +4,6 @@
 #ifndef MAP_H
 #define MAP_H
 
-Tile map[X_MaxSize][Y_MaxSize]{};
+Tile map[X_MaxSize][Y_MaxSize];
 
 #endif
