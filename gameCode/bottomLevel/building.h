@@ -13,7 +13,7 @@ struct Building
 
     Building()
     {
-        name = "NoBuilding";
+        name = "InvaildBuilding";
         key = "  ";
         buildingType = baseInvalidBuilding;
     }
@@ -28,7 +28,7 @@ struct Building
     {
         if (name == compare.name && buildingType == compare.buildingType) return true;
         else if (compare.buildingType == baseInvalidBuilding) return true;
-        return false;
+        else return false;
         
     }
     

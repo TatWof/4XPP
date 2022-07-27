@@ -90,7 +90,6 @@ void displayLineSplitter()
 
 void displayTerrainKey(int X, int Y)
 {
-    std::cout << std::setw(2) << std::left;
     std::cout << map[X][Y].terrain.key;
 }
 void displayResourceKey(int X, int Y)
@@ -105,12 +104,7 @@ void displayUnitKey(int X, int Y)
 }
 void displayBuildingKey(int X, int Y)
 {
-    if (map[X][Y].building == buildings[0]) {std::cout << "  ";}
-    else 
-    {
-        std::cout << std::setw(2) << std::left;
-        std::cout << map[X][Y].building.key;
-    }
+    std::cout << map[X][Y].building.key;
 }
 void displayTerritoryKey(int X, int Y)
 {

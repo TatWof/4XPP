@@ -1,5 +1,8 @@
 #include "terrain.h"
 
+#ifndef TERRAIN_CPP
+#define TERRAIN_CPP
+
 Terrain terrains[]
 {
 {"InvaildTerrain", baseInvalidTerrain, nullTerrainVariant, NoFeature, "IT"},
@@ -41,3 +44,5 @@ Terrain terrains[]
 {"UnderwaterVent", Water, Ocean, Lava, "UV"},
 
 };
+
+#endif

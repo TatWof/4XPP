@@ -1,5 +1,8 @@
 #include "resource.h"
 
+#ifndef RESOURCE_CPP
+#define RESOURCE_CPP
+
 Resource resources[]
 {
 {"NoResource", noResourceType, ' '},
@@ -13,3 +16,5 @@ Resource resources[]
 {"NoResource", noResourceType, ' '},
 {"Wool", Luxury, ' '}
 };
+
+#endif
