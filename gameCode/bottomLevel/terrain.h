@@ -1,6 +1,3 @@
-#include <ostream>
-#include <limits>
-
 #ifndef TERRAIN_H
 #define TERRAIN_H
 
@@ -42,13 +39,13 @@ Terrain terrains[]
 {Water, Ocean, Peak, "MidOceanRidge", "MR"},
 {Water, Ocean, Lava, "UnderwaterVent", "UV"},
 
-{baseInvaildTerrain, nullTerrainVariant, NoFeature, "InvaildTerrain", "IT"},
+{baseInvalidTerrain, nullTerrainVariant, NoFeature, "InvaildTerrain", "IT"},
 
 };
 
 /*Everything past this point is for the struct */
 
-enum baseTerrainType{baseInvaildTerrain = 0, Land = 1, Water = 2};
+enum baseTerrainType{baseInvalidTerrain = 0, Land = 1, Water = 2};
 enum TerrainVariant
 {
     nullTerrainVariant = 0,
@@ -77,7 +74,7 @@ struct Terrain
 {
     std::string name{};
     std::string key{};
-    baseTerrainType terrainType{baseInvaildTerrain};
+    baseTerrainType terrainType{baseInvalidTerrain};
     TerrainVariant variant{nullTerrainVariant};
     TerrainFeature feature{NoFeature};
     Temperature tempC;
@@ -85,7 +82,7 @@ struct Terrain
     
     Terrain()
     { 
-        this->terrainType = baseInvaildTerrain;
+        this->terrainType = baseInvalidTerrain;
         this->variant = nullTerrainVariant;
         this->feature = NoFeature;
         this->name = "InvaildTerrain";
@@ -105,7 +102,7 @@ struct Terrain
     {
         if (terrainType == compare.terrainType && variant == compare.variant && feature == compare.feature)
             return true;
-        else if (baseInvaildTerrain == compare.terrainType && nullTerrainVariant == compare.variant) return true;
+        else if (baseInvalidTerrain == compare.terrainType && nullTerrainVariant == compare.variant) return true;
         else return false;
     }
     

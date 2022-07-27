@@ -9,10 +9,11 @@ Resource resources[]
 {"Cotton", Luxury, 'C'},
 {"Horse", Strategtic, 'H'},
 {"Iron", Strategtic, 'H'},
-{"NoResource", noResourceType, ' '}
+{"NoResource", noResourceType, ' '},
+{"InvalidResource", baseInvalidResource, ' '}
 };
 
-enum baseResourceType{baseInvaildResource = 0, noResourceType = 1, Gold = 2, Construction = 3, Luxury = 4, Strategtic = 5};
+enum baseResourceType{baseInvalidResource = 0, noResourceType = 1, Gold = 2, Construction = 3, Luxury = 4, Strategtic = 5};
 
 struct Resource
 {
