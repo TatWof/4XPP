@@ -1,4 +1,34 @@
 ========
-|TR  0U|
+|TTR 0U|
 |C   0X|
 ========
+
+GL = Grasslands
+GH = GrassyHill
+FT = Forest
+RF = Rainforest
+DN = Dunes
+SV = Savannah
+SC = SandyCoast
+SD = SandyDesert
+OS = Oasis
+RH = RockyHill
+MT = Mountain
+RC = RockyCoast
+VL = Volcano
+PF = Permafrost
+SH = SnowyHill
+EF = EvergreenForest
+TN = Tundra
+ZP = FrozenPonds
+SP = SnowyPeaks
+IB = IceBridge
+LB = Lakebed
+CW = CoastalWaters
+OC = OpenSea
+IW = IcyWaters
+OO = OpenOcean
+MR = MidOceanRidge
+UV = UnderwaterVent
+GC = Glacier
+IV = InvaildTerrain

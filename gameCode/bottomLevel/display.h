@@ -9,6 +9,12 @@
 
 
 void displayLineSplitter();
+void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin);
+void displayTerrain(int X, int Y);
+void displayResource(int X, int Y);
+void displayUnit(int X, int Y);
+void displayBuilding(int X, int Y);
+void displayTerritory(int X, int Y);
 
 void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
 {
@@ -73,6 +79,18 @@ void displayLineSplitter()
         std::cout << "========";
     }
     std::cout << std::endl;
+}
+
+void displayTerrain(int X, int Y)
+{
+    std::cout << std::setw(2);
+    std::cout << map[X][Y].terrain.key;
+}
+
+void displayResource(int X, int Y)
+{
+    std::cout << std::setw(2);
+    
 }
 
 #endif
