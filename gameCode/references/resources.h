@@ -1,4 +1,4 @@
-#include "./baseStructs/resource.h"
+#include "../baseStructs/resource.h"
 
 #ifndef RESOURCES_H
 #define RESOURCES_H

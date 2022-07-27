@@ -1,4 +1,4 @@
-#include "./baseStructs/building.h"
+#include "../baseStructs/building.h"
 
 #ifndef BUILDINGS_H
 #define BUILDINGS_H

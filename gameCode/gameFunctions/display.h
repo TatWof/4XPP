@@ -1,11 +1,11 @@
 #include <iostream>
 #include <iomanip>
 
-#include "./settings.h"
-#include "./baseStructs/map.h"
-#include "./references/buildings.h"
-#include "./references/units.h"
-#include "./references/factions.h"
+#include "../settings.h"
+#include "../baseStructs/map.h"
+#include "../references/buildings.h"
+#include "../references/units.h"
+#include "../references/factions.h"
 
 #ifndef DISPLAY_H
 #define DISPLAY_H
@@ -30,7 +30,7 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
     std::cout << "      ";
     for (size_t j = 0; j < X_DisplaySize; ++j)
     {
-        std::cout << std::setw(8) << std::left;
+        std::cout << std::setw(7) << std::left;
         std::cout << X_DisplayOrigin + j;
     }
     std::cout << std::endl;
@@ -38,7 +38,8 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
     std::cout << "      ";
     for (size_t j = 0; j < X_DisplaySize; ++j)
     {
-        std::cout << std::setw(8) << std::left;
+        std::cout << "~";
+        std::cout << std::setw(6) << std::left;
         std::cout << j;
     }
     std::cout << std::endl;
@@ -52,26 +53,26 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
         
         for (size_t j = 0; j < X_DisplaySize; ++j)
         {
-            std::cout << "|";
+            std::cout << "║";
             displayTerrainKey(j, i);
             displayResourceKey(j, i);
             displayUnitKey(j, i);
-            std::cout << "|";
-        }
-        std::cout << std::endl;
 
-        std::cout << std::setw(6) << std::left;
+        }
+        std::cout << "║" << std::endl;
+
+        std::cout << "~";
+        std::cout << std::setw(5) << std::left;
         std::cout << i;
 
         for (size_t j = 0; j < X_DisplaySize; ++j)
         {
-            std::cout << "|";
+            std::cout << "║";
             displayBuildingKey(j, i);
             std::cout << "  ";
             displayTerritoryKey(j, i);
-            std::cout << "|";
         }
-        std::cout << std::endl;
+        std::cout << "║" << std::endl;
 
         displayLineSplitter();
     }
@@ -83,9 +84,9 @@ void displayLineSplitter()
     std::cout << "      ";
     for (size_t i = 0; i < X_DisplaySize; ++i)
     {
-        std::cout << "========";
+        std::cout << "╬══════";
     }
-    std::cout << std::endl;
+    std::cout << "╬" << std::endl;
 }
 
 void displayTerrainKey(int X, int Y)

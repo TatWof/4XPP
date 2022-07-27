@@ -1,4 +1,4 @@
-#include "./baseStructs/terrain.h"
+#include "../baseStructs/terrain.h"
 
 #ifndef TERRAINS_H
 #define TERRAINS_H
