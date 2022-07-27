@@ -6,5 +6,4 @@
 
 Tile map[X_MaxSize][Y_MaxSize]{};
 
-
 #endif
