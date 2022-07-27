@@ -14,7 +14,7 @@ struct Building
     Building()
     {
         name = "InvaildBuilding";
-        key = "  ";
+        key = "IB";
         buildingType = baseInvalidBuilding;
     }
     Building(std::string name, baseBuildingType, std::string key)

@@ -5,7 +5,7 @@
 
 Building buildings[]
 {
-    {"NoBuilding", noBuildingType, "NB"},
+    {"NoBuilding", noBuildingType, "  "},
     {"InvalidBuilding", baseInvalidBuilding, "IB"},
     {"City", Urban, "CT"},
     {"Farm", Rural, "FM"}
