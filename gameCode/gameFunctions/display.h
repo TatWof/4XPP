@@ -28,49 +28,49 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
     Y_DisplayOrigin = (Y_DisplayOrigin > (Y_MapSize - Y_DisplaySize)) ? (Y_MapSize - Y_DisplaySize) : Y_DisplayOrigin;
 
     std::cout << "      ";
-    for (size_t j = 0; j < X_DisplaySize; ++j)
+    for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
     {
         std::cout << std::setw(7) << std::left;
-        std::cout << X_DisplayOrigin + j;
+        std::cout << X_DisplayOrigin + X_Displacement;
     }
     std::cout << std::endl;
     
     std::cout << "      ";
-    for (size_t j = 0; j < X_DisplaySize; ++j)
+    for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
     {
         std::cout << "~";
         std::cout << std::setw(6) << std::left;
-        std::cout << j;
+        std::cout << X_Displacement;
     }
     std::cout << std::endl;
     
     displayLineSplitter();
 
-    for (size_t i = 0; i < Y_DisplaySize; ++i)
+    for (size_t Y_Displacement = 0; Y_Displacement < Y_DisplaySize; ++Y_Displacement)
     {
         std::cout << std::setw(6) << std::left;
-        std::cout << Y_DisplayOrigin + i;
+        std::cout << Y_DisplayOrigin + Y_Displacement;
         
-        for (size_t j = 0; j < X_DisplaySize; ++j)
+        for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
         {
             std::cout << "║";
-            displayTerrainKey(j, i);
-            displayResourceKey(j, i);
-            displayUnitKey(j, i);
+            displayTerrainKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
+            displayResourceKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
+            displayUnitKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
 
         }
         std::cout << "║" << std::endl;
 
         std::cout << "~";
         std::cout << std::setw(5) << std::left;
-        std::cout << i;
+        std::cout << Y_Displacement;
 
-        for (size_t j = 0; j < X_DisplaySize; ++j)
+        for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
         {
             std::cout << "║";
-            displayBuildingKey(j, i);
+            displayBuildingKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
             std::cout << "  ";
-            displayTerritoryKey(j, i);
+            displayTerritoryKey(X_DisplayOrigin + X_Displacement, Y_DisplayOrigin + Y_Displacement);
         }
         std::cout << "║" << std::endl;
 
@@ -82,7 +82,7 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
 void displayLineSplitter()
 {
     std::cout << "      ";
-    for (size_t i = 0; i < X_DisplaySize; ++i)
+    for (size_t X_Displacement = 0; X_Displacement < X_DisplaySize; ++X_Displacement)
     {
         std::cout << "╬══════";
     }
