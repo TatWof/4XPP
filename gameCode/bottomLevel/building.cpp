@@ -2,5 +2,6 @@
 
 Building buildings[]
 {
-    {"NoBuilding", noBuildingType, "  "}
+    {"NoBuilding", noBuildingType, "   "},
+    {"InvalidBuilding", baseInvalidBuilding, "   "}
 };

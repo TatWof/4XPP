@@ -2,6 +2,8 @@
 
 Resource resources[]
 {
+{"NoResource", noResourceType, ' '},
+{"InvalidResource", baseInvalidResource, ' '},
 {"Wood", Construction, 'W'},
 {"Stone", Construction, 'S'},
 {"Gold", Gold, 'G'},
@@ -9,7 +11,5 @@ Resource resources[]
 {"Horse", Strategtic, 'H'},
 {"Iron", Strategtic, 'H'},
 {"NoResource", noResourceType, ' '},
-{"Wool", Luxury, ' '},
-
-{"InvalidResource", baseInvalidResource, ' '}
+{"Wool", Luxury, ' '}
 };

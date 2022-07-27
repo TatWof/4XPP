@@ -15,6 +15,12 @@ struct Unit
     int range;
     Faction faction;
 
+    Unit()
+    {
+        name = "InvalidUnit";
+        key = ' ';
+        unitType = baseInvalidUnit;
+    }
     Unit(std::string name, baseUnitType unitType, char key)
     {
         this->name = name;

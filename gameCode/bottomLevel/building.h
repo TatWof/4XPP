@@ -11,11 +11,25 @@ struct Building
     std::string key;
     baseBuildingType buildingType;
 
+    Building()
+    {
+        name = "NoBuilding";
+        key = "  ";
+        buildingType = baseInvalidBuilding;
+    }
     Building(std::string name, baseBuildingType, std::string key)
     {
         this->name = name;
         this->key = key;
         this->buildingType = buildingType;
+    }
+    
+    bool operator==(Building compare)
+    {
+        if (name == compare.name && buildingType == compare.buildingType) return true;
+        else if (compare.buildingType == baseInvalidBuilding) return true;
+        return false;
+        
     }
     
     void operator=(Building compare)

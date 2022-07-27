@@ -2,6 +2,8 @@
 
 Terrain terrains[]
 {
+{"InvaildTerrain", baseInvalidTerrain, nullTerrainVariant, NoFeature, "IT"},
+
 {"Grasslands", Land, Grass, NoFeature, "GL"},
 {"GrassyHill", Land, Grass, Hill, "GH"},
 {"Forest", Land, Grass, Trees, "FT"},
@@ -37,7 +39,5 @@ Terrain terrains[]
 {"Glacier", Water, Ocean, Ice, "GC"},
 {"MidOceanRidge", Water, Ocean, Peak, "MR"},
 {"UnderwaterVent", Water, Ocean, Lava, "UV"},
-
-{"InvaildTerrain", baseInvalidTerrain, nullTerrainVariant, NoFeature, "IT"},
 
 };

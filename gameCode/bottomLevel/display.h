@@ -3,6 +3,9 @@
 
 #include "../settings.h"
 #include "map.h"
+#include "building.cpp"
+#include "unit.cpp"
+#include "faction.cpp"
 
 #ifndef DISPLAY_H
 #define DISPLAY_H
@@ -49,9 +52,11 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
         
         for (size_t j = 0; j < X_DisplaySize; ++j)
         {
-            std::string tile1 = "|      |";
-            
-            std::cout << tile1;
+            std::cout << "|";
+            displayTerrainKey(j, i);
+            displayResourceKey(j, i);
+            displayUnitKey(j, i);
+            std::cout << "|";
         }
         std::cout << std::endl;
 
@@ -60,9 +65,11 @@ void displayMap(int X_DisplayOrigin, int Y_DisplayOrigin)
 
         for (size_t j = 0; j < X_DisplaySize; ++j)
         {
-            std::string tile2 = "|      |";
-            
-            std::cout << tile2;
+            std::cout << "|";
+            displayBuildingKey(j, i);
+            std::cout << "  ";
+            displayTerritoryKey(j, i);
+            std::cout << "|";
         }
         std::cout << std::endl;
 
@@ -86,11 +93,30 @@ void displayTerrainKey(int X, int Y)
     std::cout << std::setw(2) << std::left;
     std::cout << map[X][Y].terrain.key;
 }
-
 void displayResourceKey(int X, int Y)
 {
     std::cout << std::setw(2) << std::left;
     std::cout << map[X][Y].resource.key;
+}
+void displayUnitKey(int X, int Y)
+{
+    if (map[X][Y].unit == units[0]) {std::cout << "  ";}
+    else {std::cout << map[X][Y].unit.faction.key << map[X][Y].unit.key;}
+}
+void displayBuildingKey(int X, int Y)
+{
+    if (map[X][Y].building == buildings[0]) {std::cout << "  ";}
+    else 
+    {
+        std::cout << std::setw(2) << std::left;
+        std::cout << map[X][Y].building.key;
+    }
+}
+void displayTerritoryKey(int X, int Y)
+{
+    if (map[X][Y].ownership == factions[0]) {std::cout << "  ";}
+    else {std::cout << map[X][Y].ownership.key << 'X';}
+    
 }
 
 #endif

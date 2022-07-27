@@ -1,6 +1,6 @@
 ========
 |TTR 0U|
-|C   0X|
+|BB  0X|
 ========
 
 GL = Grasslands
