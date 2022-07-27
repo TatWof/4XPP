@@ -27,14 +27,13 @@ struct Resource
 
     bool operator==(baseResourceType compare)
     {
-        if (resourceType == compare) return true;
-        
+        if (resourceType == compare) return true;        
         return false;
     }
     bool operator==(Resource compare)
     {
-        if (name == compare.name) return true;
-
+        if (name == compare.name && resourceType == compare.resourceType) return true;
+        else if (resourceType == baseInvalidResource) return true;
         return false;
     }
 };

@@ -2,42 +2,42 @@
 
 Terrain terrains[]
 {
-{Land, Grass, NoFeature, "Grasslands", "GL"},
-{Land, Grass, Hill, "GrassyHill", "GH"},
-{Land, Grass, Trees, "Forest", "FT"},
-{Land, Grass, Jungle, "Rainforest", "RF"},
+{"Grasslands", Land, Grass, NoFeature, "GL"},
+{"GrassyHill", Land, Grass, Hill, "GH"},
+{"Forest", Land, Grass, Trees, "FT"},
+{"Rainforest", Land, Grass, Jungle, "RF"},
 
-{Land, Sand, Hill, "Dunes", "DN"},
-{Land, Sand, Trees, "Savannah", "SV"},
-{Land, Sand, Coast, "SandyCoast", "SC"},
-{Land, Sand, Desert, "SandyDesert", "SD"},
-{Land, Sand, Ponds, "Oasis", "OS"},
+{"Dunes", Land, Sand, Hill, "DN"},
+{"Savannah", Land, Sand, Trees, "SV"},
+{"SandyCoast", Land, Sand, Coast, "SC"},
+{"SandyDesert", Land, Sand, Desert, "SD"},
+{"Oasis", Land, Sand, Ponds, "OS"},
 
-{Land, Rock, Hill, "RockyHill", "RH"},
-{Land, Rock, Peak, "Mountain", "MT"},
-{Land, Rock, Coast, "RockyCoast", "RC"},
-{Land, Rock, Lava, "Volcano", "VL"},
+{"RockyHill", Land, Rock, Hill, "RH"},
+{"Mountain", Land, Rock, Peak, "MT"},
+{"RockyCoast", Land, Rock, Coast, "RC"},
+{"Volcano", Land, Rock, Lava, "VL"},
 
-{Land, Snow, NoFeature, "Permafrost", "PF"},
-{Land, Snow, Hill, "SnowyHill", "SH"},
-{Land, Snow, Trees, "EvergreenForest", "EF"},
-{Land, Snow, Desert, "Tundra", "TN"},
-{Land, Snow, Ponds, "FrozenPonds", "ZP"},
-{Land, Snow, Peak, "SnowyPeaks", "SP"},
+{"Permafrost", Land, Snow, NoFeature, "PF"},
+{"SnowyHill", Land, Snow, Hill, "SH"},
+{"EvergreenForest", Land, Snow, Trees, "EF"},
+{"Tundra", Land, Snow, Desert, "TN"},
+{"FrozenPonds", Land, Snow, Ponds, "ZP"},
+{"SnowyPeaks", Land, Snow, Peak, "SP"},
 
-{Land, FrozenWater, NoFeature, "IceBridge", "IB"},
+{"IceBridge", Land, FrozenWater, NoFeature, "IB"},
 
-{Water, Shallow, NoFeature, "Lakebed", "LB"},
-{Water, Shallow, Coast, "CoastalWaters", "CW"},
+{"Lakebed", Water, Shallow, NoFeature, "LB"},
+{"CoastalWaters", Water, Shallow, Coast, "CW"},
 
-{Water, Sea, NoFeature, "OpenSea", "OC"},
-{Water, Sea, Ice, "IcyWaters", "IW"},
+{"OpenSea", Water, Sea, NoFeature, "OC"},
+{"IcyWaters", Water, Sea, Ice, "IW"},
 
-{Water, Ocean, NoFeature, "OpenOcean", "OO"},
-{Water, Ocean, Ice, "Glacier", "GC"},
-{Water, Ocean, Peak, "MidOceanRidge", "MR"},
-{Water, Ocean, Lava, "UnderwaterVent", "UV"},
+{"OpenOcean", Water, Ocean, NoFeature, "OO"},
+{"Glacier", Water, Ocean, Ice, "GC"},
+{"MidOceanRidge", Water, Ocean, Peak, "MR"},
+{"UnderwaterVent", Water, Ocean, Lava, "UV"},
 
-{baseInvalidTerrain, nullTerrainVariant, NoFeature, "InvaildTerrain", "IT"},
+{"InvaildTerrain", baseInvalidTerrain, nullTerrainVariant, NoFeature, "IT"},
 
 };

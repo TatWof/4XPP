@@ -9,5 +9,7 @@ Resource resources[]
 {"Horse", Strategtic, 'H'},
 {"Iron", Strategtic, 'H'},
 {"NoResource", noResourceType, ' '},
+{"Wool", Luxury, ' '},
+
 {"InvalidResource", baseInvalidResource, ' '}
 };

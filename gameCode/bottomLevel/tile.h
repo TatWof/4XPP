@@ -2,6 +2,7 @@
 #include "resource.h"
 #include "building.h"
 #include "unit.h"
+#include "faction.h"
 
 #ifndef TILE_H
 #define TILE_H
@@ -12,6 +13,7 @@ struct Tile
     Building building;
     Resource resource;
     Unit unit;
+    Faction ownership;
     bool inView;
     bool hasViewed;
 };

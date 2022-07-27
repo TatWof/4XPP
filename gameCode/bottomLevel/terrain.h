@@ -48,7 +48,7 @@ struct Terrain
         this->name = "InvaildTerrain";
         this->key = "IT";
     } 
-    Terrain(baseTerrainType terrainType, TerrainVariant variant, TerrainFeature feature, std::string name , std::string key)
+    Terrain(std::string name, baseTerrainType terrainType, TerrainVariant variant, TerrainFeature feature, std::string key)
     { 
         this->terrainType = terrainType;
         this->variant = variant;
@@ -61,7 +61,7 @@ struct Terrain
     {
         if (terrainType == compare.terrainType && variant == compare.variant && feature == compare.feature)
             return true;
-        else if (baseInvalidTerrain == compare.terrainType && nullTerrainVariant == compare.variant) return true;
+        else if (baseInvalidTerrain == compare.terrainType) return true;
         else return false;
     }
     
