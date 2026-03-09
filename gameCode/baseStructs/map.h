@@ -1,9 +1,22 @@
+#include <vector>
 #include "../settings.h"
 #include "tile.h"
 
 #ifndef MAP_H
 #define MAP_H
 
-Tile map[X_MaxSize][Y_MaxSize];
+struct Map
+{
+    Map();
+    ~Map();
+    
+    std::vector<std::vector<Tile>> map;
+    unsigned int X_MapSize;
+    unsigned int Y_MapSize;
+
+};
+
+
+
 
 #endif

@@ -9,7 +9,4 @@
 
 #define useExtendedASCII false
 
-unsigned int X_MapSize;
-unsigned int Y_MapSize;
-
 #endif

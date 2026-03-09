@@ -14,7 +14,7 @@ struct Faction
         name = "Placeholder";
         key = 0;
     }
-    Faction(std::string name, char key)
+    Faction(std::string name, char key, bool isAI)
     {
         this->name = name;
         this->key = key;
