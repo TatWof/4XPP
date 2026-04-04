@@ -10,9 +10,9 @@ enum TerrainVariant
 {
     nullTerrainVariant = 0,
 //  Land variants
-    Grass = 0, Sand = 1, Rock = 2, Snow = 3, FrozenWater = 4,
+    Grass = 1, Sand = 2, Rock = 3, Snow = 4, FrozenWater = 5,
 //  Water variants
-    Shallow = 0, Sea = 1, Ocean = 2
+    Shallow = 1, Sea = 2, Ocean = 3
 };
 enum TerrainFeature
 {
